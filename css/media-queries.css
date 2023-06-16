@@ -1,16 +1,19 @@
-@media screen and (min-width: 500) {
-    
+body {
+    font-family: sans-serif;
 }
 
+/*MOBILE VIEW*/
 .container.header {
     display: flex;
     justify-content: center;
     background-color: #15b0a4;
-    border: 3px lightgrey;
+    border: 3px solid lightgray;
     padding: 15px;
-
+    margin: 10px
 }
 .container a {
+    display: flex;
+    justify-content: center;
     color: black;
     text-decoration: unset;
 }
@@ -19,22 +22,33 @@ header h1 {
     display: flex;
     justify-content: center;
 }
+
  .nav-links {
      display: flex;
      flex-direction: column;
-     align-content: space-between;
-     gap: 10px;
      align-items: center;
+     gap: 10px;
      list-style: none;
  }
 
 .nav-links li {
-    margin: 5px;
-    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+    padding: 10px;
     background-color: lightgrey;
-    padding: 5px 30%;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     color: black;
-    text-decoration: none;
+}
+
+.header-img img {
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    #main .row {
+        flex-direction: column;
+    }
 }
 
