@@ -3,17 +3,18 @@ body {
 }
 .container.header {
     display: flex;
-    justify-content: center;
-    /*background-color: #15b0a4;*/
-    /*border: 3px solid lightgray;*/
-    padding: 15px;
-    margin: 10px
-}
-.hidden-on-desktop {
-    display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
+    /*!*background-color: #15b0a4;*!*/
+    /*!*border: 3px solid lightgray;*!*/
+    /*padding: 15px;*/
+    /*margin: 10px;*/
     display: none;
+    margin: 0%;
+    padding: 0%;
 }
+ /*#toprow {*/
+ /*    align-items: center;*/
+ /*}*/
 
 .hidden-on-desktop a {
     text-decoration: none;
@@ -22,6 +23,7 @@ body {
 
 header h1 {
     display: flex;
+    align-content: flex-start;
 }
 
  .nav-links {
@@ -50,9 +52,13 @@ header h1 {
 
  #bottom-row {
      flex-direction: row;
-    justify-content: start;
+    /*justify-content: start;*/
      align-items: center;
 }
+
+ #bottom-row p {
+     flex-grow: 1;
+ }
 
 #social-media-links {
     flex-direction: row;
@@ -63,6 +69,16 @@ header h1 {
     #main .row {
         flex-direction: column;
     }
+
+    .container.header {
+        display: flex;
+        justify-content: center;
+        /*background-color: #15b0a4;*/
+        /*border: 3px solid lightgray;*/
+        padding: 15px;
+        /*margin: 1px;*/
+    }
+
     .hidden-on-desktop {
         display: flex;
         justify-content: center;
@@ -89,10 +105,9 @@ header h1 {
         justify-content: center;
         /*flex-grow: 1;*/
     }
-    .nav-links ul {
-        ;
+    ul.nav-links {
+        padding-left: 0px;
     }
-
     .nav-links li {
         display: flex;
         flex-direction: row;
@@ -103,7 +118,7 @@ header h1 {
         color: black;
     }
 
-    .container a {
+    .nav-links a {
         display: flex;
         justify-content: center;
         color: black;
@@ -117,5 +132,18 @@ header h1 {
         margin-bottom: 0px;
     }
 
+    footer {
+        flex-direction: row;
+    }
+
+    #bottom-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #social-media-links {
+        flex-direction: row;
+    }
 }
 
