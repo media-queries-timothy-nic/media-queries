@@ -1,8 +1,6 @@
 body {
     font-family: sans-serif;
 }
-
-
 .container.header {
     display: flex;
     justify-content: center;
@@ -24,7 +22,6 @@ body {
 
 header h1 {
     display: flex;
-    justify-content: center;
 }
 
  .nav-links {
@@ -47,6 +44,11 @@ header h1 {
     width: 100%;
 }
 
+.column.subsection {
+    flex: 0 0 35%;
+}
+
+/*mobile*/
 @media screen and (max-width: 500px) {
     #main .row {
         flex-direction: column;
@@ -55,14 +57,11 @@ header h1 {
         display: flex;
         justify-content: center;
         display: unset;
-    }
-
-    .container.header {
         display: flex;
         justify-content: center;
         background-color: #cbffff;
         border: 3px solid lightgray;
-        /*padding: 15px;*/
+        padding: 15px;
 
     }
 
@@ -77,7 +76,13 @@ header h1 {
 
     #toprow {
         flex-direction: column;
+        justify-content: center;
+        /*flex-grow: 1;*/
     }
+    .nav-links ul {
+        ;
+    }
+
     .nav-links li {
         display: flex;
         flex-direction: row;
@@ -86,8 +91,6 @@ header h1 {
         padding: 10px;
         background-color: lightgrey;
         color: black;
-
-
     }
 
     .container a {
